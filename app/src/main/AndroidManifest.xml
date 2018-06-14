@@ -21,12 +21,11 @@
 
         <activity android:name=".EightBallResultScreen">
             <intent-filter>
-                <action android:name="com.asfoor.magic8ball.EightBallResultScreen"/>
+                <action android:name="com.asfoor.magic8ball.EightBallResultScreen" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
 
 
     </application>

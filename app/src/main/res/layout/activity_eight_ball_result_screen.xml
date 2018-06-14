@@ -7,23 +7,10 @@
     tools:context=".EightBallResultScreen"
     tools:layout_editor_absoluteY="81dp">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="217dp"
-        android:layout_marginBottom="65dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginStart="67dp"
-        app:layout_constraintBottom_toTopOf="@+id/lblFortune"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usrQuestion"
-        app:srcCompat="@drawable/eightball" />
-
     <TextView
         android:id="@+id/lblFortune"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="129dp"
         android:layout_marginBottom="15dp"
         android:layout_marginEnd="17dp"
         android:layout_marginStart="17dp"
@@ -33,16 +20,32 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/usrQuestion"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="21dp"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="17dp"
         android:layout_marginTop="43dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="193dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblFortune"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usrQuestion"
+        app:srcCompat="@drawable/eightball" />
 </android.support.constraint.ConstraintLayout>

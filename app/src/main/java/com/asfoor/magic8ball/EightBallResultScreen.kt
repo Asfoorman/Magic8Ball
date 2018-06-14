@@ -4,13 +4,16 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_eight_ball_result_screen.*
 import kotlinx.android.synthetic.main.activity_main.*
+import android.content.Intent
+import com.asfoor.magic8ball.R.id.askBttn
+
 
 /**
  * Where the 8-Ball Fortune is revealed to the user
  */
 class EightBallResultScreen : AppCompatActivity() {
 
-    var fortune = ""
+
 
     /**
      *
@@ -21,7 +24,7 @@ class EightBallResultScreen : AppCompatActivity() {
 
         //Call worker functions
         showFortune()
-        findFortune()
+        //findFortune()
 
         //Set Listeners
         //setExitListener()
@@ -33,18 +36,22 @@ class EightBallResultScreen : AppCompatActivity() {
      */
     private fun showFortune() {
 
-        usrQuestion.setText(questionTextBox.toString())
+       var question = getIntent().getExtras().getString("FortuneQuestion")
 
-        fortune = getIntent().getExtras().getString("FortuneResult")
+        usrQuestion.setText(question) //Have the question appear in the fortune result screen
+
+
+        var fortune = getIntent().getExtras().getString("FortuneResult")
 
         lblFortune.setText(fortune)
     }
 
-    /**
-     *
-     */
-    private fun findFortune() {
 
-    }
+//    /**
+//     *
+//     */
+//    private fun findFortune() {
+//
+//    }
 
 } //End of 8BallResultScreen - Where fortune is revealed
